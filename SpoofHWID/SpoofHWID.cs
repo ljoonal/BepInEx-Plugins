@@ -13,7 +13,7 @@ namespace SpoofHWID
 
 		public const string Name = "HWID Spoofer";
 
-		public const string Version = "0.1.0";
+		public const string Version = "0.2.0";
 	}
 
 	[BepInPlugin(BuildInfo.GUID, BuildInfo.Name, BuildInfo.Version)]
@@ -29,8 +29,7 @@ namespace SpoofHWID
 				ConfigCategory,
 				settingName,
 				"",
-				"The HWID to use. If it's not the correct length (by being empty for example) a new one will be generated.");
-
+				new ConfigDescription("The HWID to use. If it's not the correct length (by being empty for example) a new one will be generated.", null, "Advanced"));
 
 			if (ConfigHWID.Value.Length != SystemInfo.deviceUniqueIdentifier.Length)
 			{
