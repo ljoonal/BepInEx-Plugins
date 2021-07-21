@@ -13,7 +13,7 @@ namespace SpoofHWID
 
 		public const string Name = "HWID Spoofer";
 
-		public const string Version = "0.2.0";
+		public const string Version = "0.2.1";
 	}
 
 	[BepInPlugin(BuildInfo.GUID, BuildInfo.Name, BuildInfo.Version)]
@@ -50,7 +50,11 @@ namespace SpoofHWID
 
 		void Awake()
 		{
-			Logger.LogInfo($"HWID before patch: {SystemInfo.deviceUniqueIdentifier}");
+#if DEBUG
+    Logger.LogInfo($"HWID before patch: {SystemInfo.deviceUniqueIdentifier}");
+#else
+			Logger.LogInfo($"Patching HWID");
+#endif
 			Harmony.CreateAndPatchAll(typeof(SpoofHWIDMod));
 			Logger.LogInfo($"HWID after patch: {SystemInfo.deviceUniqueIdentifier}");
 			Logger.LogInfo($"HWID target:  {ConfigHWID.Value}");
