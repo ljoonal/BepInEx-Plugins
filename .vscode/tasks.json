@@ -42,6 +42,48 @@
 				"${workspaceFolder}/SpoofHWID/SpoofHWID.csproj"
 			],
 			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Debug FrameFocus",
+			"group": "test",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"build",
+				"--configuration",
+				"Debug",
+				"--output",
+				"${workspaceFolder}/bin",
+				"${workspaceFolder}/FrameFocus/FrameFocus.csproj"
+			],
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Build FrameFocus",
+			"group": "build",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"build",
+				"--configuration",
+				"Release",
+				"--output",
+				"${workspaceFolder}/bin",
+				"${workspaceFolder}/FrameFocus/FrameFocus.csproj"
+			],
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Clean FrameFocus",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"clean",
+				"--output",
+				"${workspaceFolder}/bin",
+				"${workspaceFolder}/FrameFocus/FrameFocus.csproj"
+			],
+			"problemMatcher": "$msCompile"
 		}
 	]
 }
