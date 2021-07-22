@@ -1,22 +1,22 @@
-# CVR-Mods
+# CVR-Plugins
 
-No warranty is provided for these mods, and they're provided as-is.
+No warranty is provided for these plugins, and they're provided as-is.
 
 ## Why use BepInEx and not MelonLoader
 
 If you're asking: "MelonLoader is the tool used with X game modding, so why not use it for Y too?"
 
 While it's a great tool, it requires .NET framework. Which is not available for linux.
-I can actually build my mods on Linux with BepInEx unlike MelonLoader.
+I can actually build my BepInEx plugins on Linux unlike MelonLoader mods.
 This is also why the build system is with VSC tasks instead of Visual Studio in this repository.
 
 MelonLoader also does not have a few features that BepInEx does, and BepInEx just seems way more mature for modding Unity (non-IL2CPP) games.
 
-## Mod list
+## Plugins list
 
 ### SpoofHWID
 
-A non-IL2CPP Unity BepInEx mod to spoof the HWID.
+A non-IL2CPP Unity BepInEx plugin to spoof the HWID.
 I strongly oppose anything privacy invasive, and wanted to learn modding so created this as my first plugin, thusly it was created.
 
 Malicious users will always find a way to achieve the same effect (running in VM's for example).
