@@ -5,7 +5,7 @@ using UnityEngine;
 namespace FrameFocus
 {
 	[BepInPlugin(BuildInfo.GUID, BuildInfo.Name, BuildInfo.Version)]
-	public class FrameFocusMod : BaseUnityPlugin
+	public class FrameFocusPlugin : BaseUnityPlugin
 	{
 		private static ConfigEntry<int> FrameLimitFocused;
 		private static ConfigEntry<int> FrameLimitUnfocused;
