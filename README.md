@@ -21,6 +21,11 @@ Allows you to limit the max framerate when alt-tabbed.
 Credit to the original MelonLoader mod [with the same name by MintLily](https://github.com/MintLily/FrameFocus), which is licensed with the same GPL3 license.
 This one does basically the same thing, but uses BepInEx instead of MelonLoader.
 
+### Input Finder
+
+Logs the currently pressed keys when enabled, which will allow you to find the KeyCode's to things just by pressing them.
+It's recommended to set the `Enabled` config value to false when actually playing the game, since getting all the possible keys will most likely impact your performance.
+
 ## Building
 
 Drag the required DLL's (listed in the `shared.props` file and the `.csproj` files) into the Libs folder, open in VSCodium/VSCode press `F1` and run the build tasks. Please note that it working does depend on you having the `dotnet` command available in your environment. Or if you're not using VSC, you can just copy the commands and execute them manually on the command line.

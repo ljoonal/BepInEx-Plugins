@@ -72,6 +72,42 @@
 				"${workspaceFolder}/FrameFocus/FrameFocus.csproj"
 			],
 			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Debug InputFinder",
+			"group": "test",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"build",
+				"--configuration",
+				"Debug",
+				"${workspaceFolder}/InputFinder/InputFinder.csproj"
+			],
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Build InputFinder",
+			"group": "build",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"build",
+				"--configuration",
+				"Release",
+				"${workspaceFolder}/InputFinder/InputFinder.csproj"
+			],
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Clean InputFinder",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"clean",
+				"${workspaceFolder}/InputFinder/InputFinder.csproj"
+			],
+			"problemMatcher": "$msCompile"
 		}
 	]
 }
