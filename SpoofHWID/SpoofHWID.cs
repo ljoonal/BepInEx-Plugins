@@ -17,12 +17,12 @@ namespace SpoofHWID
 	}
 
 	[BepInPlugin(BuildInfo.GUID, BuildInfo.Name, BuildInfo.Version)]
-	public class SpoofHWIDMod : BaseUnityPlugin
+	public class SpoofHWIDPlugin : BaseUnityPlugin
 	{
 		private const string ConfigCategory = "Settings";
 		private static ConfigEntry<string> ConfigHWID;
 
-		SpoofHWIDMod()
+		SpoofHWIDPlugin()
 		{
 			const string settingName = "HWID";
 			ConfigHWID = Config.Bind(
@@ -55,7 +55,7 @@ namespace SpoofHWID
 #else
 			Logger.LogInfo($"Patching HWID");
 #endif
-			Harmony.CreateAndPatchAll(typeof(SpoofHWIDMod));
+			Harmony.CreateAndPatchAll(typeof(SpoofHWIDPlugin));
 			Logger.LogInfo($"HWID after patch: {SystemInfo.deviceUniqueIdentifier}");
 			Logger.LogInfo($"HWID target:  {ConfigHWID.Value}");
 		}
