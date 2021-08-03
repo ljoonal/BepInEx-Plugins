@@ -12,7 +12,7 @@ I strongly oppose anything privacy invasive, and wanted to learn modding so crea
 
 Malicious users will always find a way to achieve the same effect (running in VM's for example).
 So I don't see an issue with providing the source code for how to do it with BepInEx.
-Since other smart modders could just look at knah's similar MelonLoader mod anyway.
+Since other smart modders could just look at [knah's similar MelonLoader mod](https://github.com/knah/ML-UniversalMods#hwidpatch) anyway, which was the inspiration for this plugin.
 
 ### Frame Focus
 
