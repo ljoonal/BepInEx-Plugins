@@ -1,12 +1,13 @@
 # BepInEx plugins
 
 No warranty is provided for these plugins, and they're provided as-is.
+I've tested them with one uncommon Unity/Mono game, no clue if they work in other games, so do tell me if you try them out!
 
 ## Plugins list
 
 ### SpoofHWID
 
-A non-IL2CPP Unity BepInEx plugin to spoof the HWID.
+Spoofs the unity getter for HWID.
 I strongly oppose anything privacy invasive, and wanted to learn modding so created this as my first plugin, thusly it was created.
 
 Malicious users will always find a way to achieve the same effect (running in VM's for example).
@@ -15,7 +16,7 @@ Since other smart modders could just look at knah's similar MelonLoader mod anyw
 
 ### FrameFocus
 
-This plugin allows you to limit the max framerate when alt-tabbed.
+Allows you to limit the max framerate when alt-tabbed.
 
 Credit to the original MelonLoader mod [with the same name by MintLily](https://github.com/MintLily/FrameFocus), which is licensed with the same GPL3 license.
 This one does basically the same thing, but uses BepInEx instead of MelonLoader.
