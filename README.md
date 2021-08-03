@@ -5,7 +5,7 @@ I've tested them with one uncommon Unity/Mono game, no clue if they work in othe
 
 ## Plugins list
 
-### SpoofHWID
+### HWID Spoofer
 
 Spoofs the unity getter for HWID.
 I strongly oppose anything privacy invasive, and wanted to learn modding so created this as my first plugin, thusly it was created.
@@ -14,7 +14,7 @@ Malicious users will always find a way to achieve the same effect (running in VM
 So I don't see an issue with providing the source code for how to do it with BepInEx.
 Since other smart modders could just look at knah's similar MelonLoader mod anyway.
 
-### FrameFocus
+### Frame Focus
 
 Allows you to limit the max framerate when alt-tabbed.
 
