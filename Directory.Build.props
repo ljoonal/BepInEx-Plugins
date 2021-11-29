@@ -2,24 +2,29 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>9.0</LangVersion>
-    <BaseOutputPath>..\bin</BaseOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)bin</BaseOutputPath>
     <BuildProjectReferences>false</BuildProjectReferences>
     <Deterministic>true</Deterministic>
     <CopyLocal>false</CopyLocal>
+    <RefsPath>$(MSBuildThisFileDirectory)Libs\</RefsPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugSymbols Condition="'$(Configuration)'=='Release'">false</DebugSymbols>
+    <DebugType Condition="'$(Configuration)'=='Release'">None</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="BepInEx">
-      <HintPath>..\Libs\BepInEx.dll</HintPath>
+      <HintPath>$(RefsPath)BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="HarmonyLib">
-      <HintPath>..\Libs\0Harmony.dll</HintPath>
+      <HintPath>$(RefsPath)0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\Libs\UnityEngine.dll</HintPath>
+      <HintPath>$(RefsPath)UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\Libs\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(RefsPath)UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 
