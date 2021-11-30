@@ -8,11 +8,11 @@ I've tested them with one uncommon Unity/Mono game, no clue if they work in othe
 ### HWID Spoofer
 
 Spoofs the unity getter for HWID.
-I strongly oppose anything privacy invasive, and wanted to learn modding so created this as my first plugin, thusly it was created.
+I strongly oppose anything privacy invasive, and wanted to learn modding so created this as my first plugin.
 
 Malicious users will always find a way to achieve the same effect (running in VM's for example).
 So I don't see an issue with providing the source code for how to do it with BepInEx.
-Since other smart modders could just look at [knah's similar MelonLoader mod](https://github.com/knah/ML-UniversalMods#hwidpatch) anyway, which was the inspiration for this plugin.
+Since other smart modders could just look at [knah's similar MelonLoader mod](https://github.com/knah/ML-UniversalMods#hwidpatch) anyway, which was the inspiration for this plugin and is licensed under the same GPL3.
 
 ### Frame Focus
 
@@ -28,7 +28,8 @@ It's recommended to set the `Enabled` config value to false when actually playin
 
 ## Building
 
-Drag the required DLL's (listed in the `shared.props` file and the `.csproj` files) into the Libs folder, open in VSCodium/VSCode press `F1` and run the build tasks. Please note that it working does depend on you having the `dotnet` command available in your environment. Or if you're not using VSC, you can just copy the commands and execute them manually on the command line.
+Drag the required DLL's (listed in the `Directory.Build.props` file and the `.csproj` files) into the Libs folder.
+Then use the `dotnet build` command to build.
 
 Alternatively you can try to open the folder in Visual Studio, but I cannot provide help for using that.
 If you do want to improve the situation, do feel free to contribute!
