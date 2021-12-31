@@ -26,6 +26,10 @@ This one does basically the same thing, but uses BepInEx instead of MelonLoader.
 Logs the currently pressed keys when enabled, which will allow you to find the KeyCode's to things just by pressing them.
 It's recommended to set the `Enabled` config value to false when actually playing the game, since getting all the possible keys will most likely impact your performance.
 
+### Mouse Control
+
+A mod that force locks the mouse to the game constantly.
+
 ## Building
 
 Drag the required DLL's (listed in the `Directory.Build.props` file and the `.csproj` files) into the Libs folder.
